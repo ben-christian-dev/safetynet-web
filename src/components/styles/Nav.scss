@@ -1,0 +1,154 @@
+$primary: #FFBEED;
+$secondary: #89CFF0;
+$highlight: #FB7878;
+$splash: #FFCA0D;
+
+.NavbarItems {
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    color: $primary;
+    justify-content: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-shadow: 2px 2px $secondary;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    background-color: $secondary;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: black;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1060px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        background: #FFAE7F;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        color: black;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        display: table;
+        animation: growDown 300ms ease-in-out forwards
+    }
+
+    .nav-links:hover {
+        background-color: $splash;
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #FF8F4D;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        animation: growDown 300ms ease-in-out forwards
+    }
+
+    .nav-links-mobile:hover {
+        background: white;
+        color: #FF8000;
+        transition: 250ms;
+    }
+
+    a button {
+        display: none;
+    }
+}
+
+/* Animations */
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
