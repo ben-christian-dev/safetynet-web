@@ -3,6 +3,72 @@ $secondary: #89CFF0;
 $highlight: #FB7878;
 $splash: #FFCA0D;
 
-h1 {
-    color: $primary;
+.topText {
+    color: white;
+    width: 42%;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.textH1 {
+    font-size: 48px;
+    color: white;
+}
+
+.frame1 {
+    width: 30%;
+    float: right;
+    margin: 20px 100px 10px 10px;
+}
+
+input[name=email] {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background: #FFCA0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.signUp {
+    color: black;
+    padding: 6px 12px;
+    margin-left: 10px;
+    background: #FFCA0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.signUp:hover {
+    background: #fddc64;
+    padding: 8px 12px;
+}
+
+.frame2 {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textP {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+}
+
+hr {
+    border: 2px solid $primary;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
