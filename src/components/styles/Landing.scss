@@ -49,7 +49,7 @@ input[name=email] {
 }
 
 .frame2 {
-    width: 520px;
+    width: 40%;
     float: left;
     margin-left: 50px;
     padding: 10px;
@@ -149,6 +149,15 @@ hr {
         width: 27%;
         float: right;
         margin: 20px 40px 10px 10px;
+    }
+    .signUp {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .textP {
+        font-size: 32px;
     }
 }
 
