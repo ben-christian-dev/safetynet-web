@@ -1,13 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Landing from './pages/Landing.js'
-import Nav from './Nav'
+import Header from './Header'
 import './styles/App.scss'
 
 function App() {
   return (
       <div>
-          <Nav />
-          <Landing />
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Landing} />
+          </Switch>
+        </Router>
       </div>
   );
 }

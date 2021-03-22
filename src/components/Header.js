@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './styles/Nav.scss'
+import './styles/Header.scss'
 
-class Nav extends Component {
+class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -47,4 +47,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav;
+export default Header;
