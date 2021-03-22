@@ -9,7 +9,9 @@ export default function Landing() {
     return (
         <div>
             <img className="frame1" src={frame1} alt="Frame1" />
-            <img className="frame4" src={frame4} alt="Frame4" />
+            <img className="frame4move" src={frame4} alt="Frame4" />
+            <img className="frame4move2" src={frame4} alt="Frame4" />
+            <img className="frame4move3" src={frame4} alt="Frame4" />
             <div className='topText'>
                 <h1 className='textH1'>Help make the world a safer place with Safety Net</h1>
                 <input
