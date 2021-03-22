@@ -3,14 +3,14 @@ $secondary: #89CFF0;
 $highlight: #FB7878;
 $splash: #FFCA0D;
 
-.topText {
+.top-text {
     color: white;
     width: 42%;
     padding-top: 20px;
     padding-left: 100px;
 }
 
-.textH1 {
+.text-h1 {
     font-size: 48px;
     color: white;
 }
@@ -33,7 +33,7 @@ input[name=email] {
     box-sizing: border-box;
 }
 
-.signUp {
+.sign-up {
     color: black;
     padding: 6px 12px;
     margin-left: 10px;
@@ -43,7 +43,7 @@ input[name=email] {
     border: 1px solid #ccc;
 }
 
-.signUp:hover {
+.sign-up:hover {
     background: #fddc64;
     padding: 8px 12px;
 }
@@ -57,13 +57,13 @@ input[name=email] {
     background-color: #FFBEED;
 }
 
-.textP {
+.text-p {
     width: 46%;
     margin-right: 50px;
     margin-top: 20px;
     float: right;
     color: white;
-    font-size: 22px;
+    font-size: 1.6rem;
 }
 
 hr {
@@ -75,7 +75,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.frame4move {
+.frame4-move {
     position: absolute;
     top: 0;
     left: 0;
@@ -86,7 +86,7 @@ hr {
     transform-origin: 50% 50%;
 }
 
-.frame4move2 {
+.frame4-move2 {
     position: absolute;
     bottom: 10;
     left: 0;
@@ -97,7 +97,7 @@ hr {
     transform-origin: 50% 50%;
 }
 
-.frame4move3 {
+.frame4-move3 {
     position: absolute;
     top: 100;
     right: 0;
@@ -119,14 +119,14 @@ hr {
         border-radius: 20px;
         background-color: #FFBEED;
     }
-    .textP {
+    .text-p {
         width: 70%;
         display: block;
         float: none;
         margin-left: auto;
         margin-right: auto;
         color: white;
-        font-size: 16px;
+        font-size: 1.2rem;
     }
     hr {
         border: 2px solid $primary;
@@ -136,10 +136,10 @@ hr {
         margin-right: auto;
         margin-bottom: 10px;
     }
-    .textH1 {
+    .text-h1 {
         font-size: 22px;
     }
-    .topText {
+    .top-text {
         color: white;
         width: 80%;
         padding-top: 20px;
@@ -150,13 +150,13 @@ hr {
         float: right;
         margin: 20px 40px 10px 10px;
     }
-    .signUp {
+    .sign-up {
         margin-left: 0px;
     }
 }
 
 @media screen and (min-width: 1650px) {
-    .textP {
+    .text-p {
         font-size: 32px;
     }
 }

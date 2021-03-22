@@ -9,11 +9,11 @@ export default function Landing() {
     return (
         <div>
             <img className="frame1" src={frame1} alt="Frame1" />
-            <img className="frame4move" src={frame4} alt="Frame4" />
-            <img className="frame4move2" src={frame4} alt="Frame4" />
-            <img className="frame4move3" src={frame4} alt="Frame4" />
-            <div className='topText'>
-                <h1 className='textH1'>Help make the world a safer place with Safety Net</h1>
+            <img className="frame4-move" src={frame4} alt="Frame4" />
+            <img className="frame4-move2" src={frame4} alt="Frame4" />
+            <img className="frame4-move3" src={frame4} alt="Frame4" />
+            <div className='top-text'>
+                <h1 className='text-h1'>Help make the world a safer place with Safety Net</h1>
                 <input
                 name="email"
                 placeholder="Email Address"
@@ -21,13 +21,14 @@ export default function Landing() {
                 onChange={e=> setEmail(e.target.value)}
                 required
                 />
-                <button className='signUp'>Sign up</button>
+                <button className='sign-up'>Sign up</button>
             </div>
             <br/>
             <div style={{textAlign: 'center', marginTop: '50px'}}>
-                <h1 className='textH1'>How it works</h1>
+                <br/>
+                <h1 className='text-h1'>How it works</h1>
                 <hr/>
-                <p className='textP'>
+                <p className='text-p'>
                     If you ever come into a situation where you need immediate help from people around you but you can't reach them by yelling?
                     Safety Net is an app that alerts everyone in a 200m radius around you. It will show them your exact location and a description
                     of you so you can get the immediate help you need. <span style={{color:'red'}}>(This isn't a replacement for 911)</span>
