@@ -24,7 +24,7 @@ export default function Landing() {
                 <button className='sign-up'>Sign up</button>
             </div>
             <br/>
-            <div style={{textAlign: 'center', marginTop: '50px'}}>
+            <div style={{textAlign: 'center', marginTop: '3rem'}}>
                 <br/>
                 <h1 className='text-h1'>How it works</h1>
                 <hr/>

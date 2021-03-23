@@ -1,0 +1,53 @@
+$primary: #FFBEED;
+$secondary: #89CFF0;
+$highlight: #FB7878;
+$splash: #FFCA0D;
+
+.footer-items {
+    background-color: $primary;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+.frame7 {
+    width: 45px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    text-align: center;
+    width: 70vw;
+    list-style: none;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.footer-dash {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.footer-button {
+    color: whitesmoke;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.footer-button:hover {
+    color: $highlight;
+    transition: all 0.2s ease-out;
+}
