@@ -18,7 +18,7 @@ $splash: #FFCA0D;
     margin: 20px 100px 10px 10px;
 }
 
-input[name=email] {
+input[name=signUp] {
     width: 65%;
     padding: 10px 20px;
     margin: 10px 0px;
@@ -109,6 +109,112 @@ hr {
     z-index: -1;
     animation: move2 10s ease-in-out infinite;
     transform-origin: 50% 50%;
+}
+
+.about-us {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.our-story {
+    font-size: 2rem;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  
+.our-story:before,
+.our-story:after {
+    background-color: $primary;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+.our-story:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+.our-story:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.frame5 {
+    width: 50%;
+}
+
+.questions {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.frame6 {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input[name=name], [name=email] {
+    width: 65%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFCA0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea[name=question] {
+    width: 65%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFCA0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.send-message {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 10px 12px;
+    background: #FB7878;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: 1px solid #FB7878;
+}
+
+.send-message:hover {
+    background: #f88585;
 }
 
 @media screen and (max-width: 1150px) {

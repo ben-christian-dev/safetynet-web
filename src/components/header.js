@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
+import { scroller } from 'react-scroll'
 import './styles/header.scss'
 
 class Header extends Component {
@@ -7,6 +9,14 @@ class Header extends Component {
         this.state = {
             clicked: false,
         }
+    }
+
+    scrollTo = (element) => {
+        scroller.scrollTo(`${element}`, {
+          duration: 800,
+          delay: 0,
+          smooth: 'easeInOutQuart'
+        })
     }
 
     // Handles click
@@ -22,17 +32,17 @@ class Header extends Component {
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     <li>
-                        <a className="nav-links" href='/#'>
+                        <a className="nav-links" onClick={()=> this.scrollTo('how-it-works')}>
                             How it works
                         </a>
                     </li>
                     <li>
-                        <a className="nav-links" href='/#'>
+                        <a className="nav-links" onClick={()=> this.scrollTo('about-us')}>
                             About
                         </a>
                     </li>
                     <li>
-                        <a className="nav-links" href='/#'>
+                        <a className="nav-links" onClick={()=> this.scrollTo('questions')}>
                             Contact
                         </a>
                     </li>
