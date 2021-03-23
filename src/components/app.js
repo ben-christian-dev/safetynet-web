@@ -7,15 +7,15 @@ import './styles/app.scss'
 
 function App() {
   return (
-      <div>
-        <Router>
-          <Header />
-          <Switch>
-            <Route path="/" exact component={Landing} />
-          </Switch>
-          <Footer />
-        </Router>
-      </div>
+    <div>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Landing} />
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

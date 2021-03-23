@@ -57,6 +57,7 @@ input[name=signUp] {
 }
 
 .sign-up:hover {
+    box-shadow: 0 0 0 2px $splash;
     transition: all 0.5s ease;
     cursor: pointer;
     background: $secondary;
@@ -212,6 +213,7 @@ input[name=name], [name=email], textarea[name=question] {
 }
 
 .send-message:hover {
+    box-shadow: 0 0 0 2px $highlight;
     transition: all 1s ease;
     background: $secondary;
 }
