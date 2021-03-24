@@ -81,16 +81,13 @@ export default function Landing() {
                     <h1 className='text-h1'>About Us</h1>
                     <p className='our-story'>OUR STORY</p>
                     <p className='text-p'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam placerat dolor odio, ut posuere felis egestas bibendum.
-                        Suspendisse sit amet purus aliquet, semper felis ut, ullamcorper
-                        massa. Etiam a suscipit nisl, eu imperdiet nulla. Etiam gravida metus
-                        eu cursus dignissim. Nulla et sagittis ante. Fusce in justo consequat
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam placerat dolor odio, ut posuere felis egestas bibendum.
-                        Suspendisse sit amet purus aliquet, semper felis ut, ullamcorper
-                        massa. Etiam a suscipit nisl, eu imperdiet nulla. Etiam gravida metus
-                        eu cursus dignissim. Nulla et sagittis ante. Fusce in justo consequat
+                    Safetynet is free and simple to use. Just download the app, and use when you feel that you need help. 
+                    If you like it - spread the word, so that people worldwide can feel safe and empowered while walking alone, 
+                    taking transport alone, or even being in a public space. A simple push of a button on the app triggers an alert 
+                    notice to everyone who is in a 200m radius of you. It shows your exact location on a map, so anyone within the 
+                    space can come help you as soon as possible. Safetynet was inspired by the continued rates of sexual assault in the 
+                    world, with many incidents taking place on transport or when walking home alone. The app is not a 911 alternative, 
+                    and is used to inspire the community around you to make sure you feel safe if you are in danger.
                     </p>
                     <img className="frame5" src={frame5} alt="Frame5" />
                 </div>
