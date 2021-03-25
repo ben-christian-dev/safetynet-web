@@ -47,7 +47,7 @@ class Header extends Component {
                         </a>
                     </li>
                     <li>
-                        <a className="nav-links" href='/#'>
+                        <a className="nav-links" href='/#' onClick={()=> this.scrollTo('download')}>
                             Download
                         </a>
                     </li>

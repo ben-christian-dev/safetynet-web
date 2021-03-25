@@ -1,9 +1,13 @@
 import React from 'react'
 import frame1 from '../../assets/frame1.svg'
-import frame2 from '../../assets/frame2.svg'
-import frame4 from '../../assets/frame4.svg'
 import frame5 from '../../assets/frame5.svg'
 import frame6 from '../../assets/frame6.svg'
+import app from '../../assets/app.svg'
+import location from '../../assets/location.svg'
+import alert from '../../assets/alert.svg'
+import googleplaybadge from '../../assets/google-play-badge.png'
+import appstorebadge from '../../assets/appstore-badge.svg'
+
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -40,9 +44,7 @@ export default function Landing() {
 
     return (
         <Container fluid style={{ 'marginTop': '5.5rem' }}>
-            <img className="frame4-move" src={frame4} alt="Frame4" />
-            <img className="frame4-move2" src={frame4} alt="Frame4" />
-            <img className="frame4-move3" src={frame4} alt="Frame4" />
+
             <Row className="justify-content-around">
                 <Col lg={4} className='mb-5'>
                     <div className='top-text'>
@@ -74,17 +76,61 @@ export default function Landing() {
                     <h1 className='text-h1'>How it works</h1>
                     <hr />
                 </div>
-                <Col md={5}>
-                    <img className="frame2" src={frame2} alt="Frame2" />
-                </Col>
-                <Col md={6}>
-                    <p className='text-p'>
-                        If you ever come into a situation where you need immediate help from people around you but you can't reach them by yelling?
-                        Safetynet is an app that alerts everyone in a 200m radius around you. It will show them your approximate location
-                        so you can get the immediate help you need.
-                    </p>
-                    <br />
-                </Col>
+                <Row className='justify-content-around mt-5'>
+                    <Col lg={3} className='mb-3'>
+                        <div className={'how-it-works-card'}>
+                            <img src={app} alt='app' width='100%' className={'how-it-works-img'} />
+                            <p className={'text-muted text-left mt-3'}>Open the Safetynet app if you are in danger.</p>
+                        </div>
+                    </Col>
+                    <Col lg={1}>
+                        <ul class='loading-frame'>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                        </ul>
+                    </Col>
+                    <Col lg={3} className='mb-3'>
+                        <div className={'how-it-works-card'}>
+                            <img src={alert} width='100%' alt='app' />
+                            <p className={'text-muted text-left mt-3'}>
+                                <hr className='mb-4 mt-4'/>
+                                Once the app is open, you will see a large white button. Press this button once and you will feel a vibration. All devices within a 200m radius of you with the Safetynet app
+                                will be sent an alert.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col lg={1}>
+                        <ul class='loading-frame'>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                            <div class='circle'></div>
+                        </ul>
+                    </Col>
+                    <Col lg={3} className='mb-3'>
+                        <div className={'how-it-works-card'}>
+                            <img src={location} width='100%' alt='app' />
+                            <hr className='mb-4 mt-4' />
+                            <p className={'text-muted text-left mt-3'}>
+                                The alert will show the address you are clostest to, your distance away from the person who is alerted and the neighbourhood you are in so the community can help you.
+                                </p>
+                        </div>
+                    </Col>
+                </Row>
             </Row>
             <div className='buffer'></div>
             <Row>
@@ -103,6 +149,23 @@ export default function Landing() {
                     <img className="frame5" src={frame5} alt="Frame5" />
                 </div>
             </Row>
+            <div class='buffer text-center'>
+
+                <h1 className='text-h1' id='download'>Download now (Coming April 1st)</h1>
+                <Container fluid>
+                    <Row className='justify-content-center'>
+                        <Col lg={2}>
+                            <img width='100%' src={googleplaybadge} alt='android' />
+                        </Col>
+                        <Col lg={2}>
+                            <img width='80%' height='100%' src={appstorebadge} alt='ios' />
+                        </Col>
+                    </Row>
+                </Container>
+
+
+
+            </div>
             <div className='buffer'></div>
             <Row className='justify-content-around'>
                 <br />
