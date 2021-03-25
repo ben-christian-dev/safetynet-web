@@ -17,12 +17,6 @@ export default function Footer() {
                     <li className='footer-button' onClick={() => window.location.href = "https://www.instagram.com/safetynet.app/"}>
                         <i className="fab fa-instagram" />
                     </li>
-                    <li className='footer-button' onClick={() => window.location.href = "https://www.instagram.com/safetynet.app/"}>
-                        <i className="fab fa-twitter" />
-                    </li>
-                    <li className='footer-button' onClick={() => window.location.href = "https://www.instagram.com/safetynet.app/"}>
-                        <i className="fab fa-facebook" />
-                    </li>
                     <li className='footer-button' onClick={() => window.location.href = "https://www.github.com/safetynetorg/"}>
                         <i className="fab fa-github" />
                     </li>
