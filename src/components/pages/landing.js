@@ -18,7 +18,7 @@ export default function Landing() {
 
     const SignUp = async () => {
         await axios({
-            url: 'https://safetynet-server.herokuapp.com//signup',
+            url: 'https://safetynet-server.herokuapp.com/signup',
             method: 'post',
             data: {
                 'email': signUp
@@ -28,7 +28,7 @@ export default function Landing() {
 
     const Contact = async () => {
         await axios({
-            url: 'https://safetynet-server.herokuapp.com//contact',
+            url: 'https://safetynet-server.herokuapp.com/contact',
             method: 'post',
             data: {
                 'name': name,
