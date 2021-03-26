@@ -80,45 +80,45 @@ export default function Landing() {
                     <Col lg={3} className='mb-3'>
                         <div className={'how-it-works-card'}>
                             <img src={app} alt='app' width='100%' className={'how-it-works-img'} />
-                            <p className={'text-muted text-left mt-3'}>Open the Safetynet app if you are in danger.</p>
+                            <p className={'text-muted text-left mt-3'}>Open the Safetynet app if you think you are in danger.</p>
                         </div>
                     </Col>
                     <Col lg={1}>
-                        <ul class='loading-frame'>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
+                        <ul className={'loading-frame'}>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
                         </ul>
                     </Col>
                     <Col lg={3} className='mb-3'>
                         <div className={'how-it-works-card'}>
                             <img src={alert} width='100%' alt='app' />
+                            <hr className='mb-4 mt-4' />
                             <p className={'text-muted text-left mt-3'}>
-                                <hr className='mb-4 mt-4'/>
                                 Once the app is open, you will see a large white button. Press this button once and you will feel a vibration. All devices within a 200m radius of you with the Safetynet app
                                 will be sent an alert.
                             </p>
                         </div>
                     </Col>
                     <Col lg={1}>
-                        <ul class='loading-frame'>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
-                            <div class='circle'></div>
+                        <ul className={'loading-frame'}>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
+                            <div className={'circle'}></div>
                         </ul>
                     </Col>
                     <Col lg={3} className='mb-3'>
@@ -149,7 +149,7 @@ export default function Landing() {
                     <img className="frame5" src={frame5} alt="Frame5" />
                 </div>
             </Row>
-            <div class='buffer text-center'>
+            <div className={'buffer text-center'}>
 
                 <h1 className='text-h1' id='download'>Download now (Coming April 1st)</h1>
                 <Container fluid>
@@ -198,8 +198,6 @@ export default function Landing() {
                         />
                         <button className='send-message mt-3' onClick={Contact}>SEND MESSAGE</button>
                     </form>
-
-
                 </Col>
                 <Col lg={6}>
                     <img className="frame6" src={frame6} alt="Frame6" />
