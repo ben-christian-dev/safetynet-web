@@ -52,9 +52,9 @@ export default function Landing() {
     }
 
     return (
-        <Container fluid style={{ 'marginTop': '5.5rem' }}>
+        <Container fluid>
 
-            <Row className="justify-content-between">
+            <Row className="justify-content-between" id={'landing'}>
                 <Col lg={5} className='mb-5'>
                     <div className='top-text'>
                         <h1 className='font-large font-weight-bolder'>Help make the world a safer place with Safetynet</h1>
