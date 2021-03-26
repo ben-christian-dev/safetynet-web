@@ -21,6 +21,9 @@ export default function Landing() {
     const [question, setQuestion] = React.useState('')
 
     const SignUp = async () => {
+        if (signUp === '' || signUp === null){
+            return
+        }
         await axios({
             url: 'https://safetynet-server.herokuapp.com/signup',
             method: 'post',
@@ -31,6 +34,9 @@ export default function Landing() {
     }
 
     const Contact = async () => {
+        if (name === '' || name === null || email === "" || email === null || question === "" || question === null){
+            return
+        }
         await axios({
             url: 'https://safetynet-server.herokuapp.com/contact',
             method: 'post',
