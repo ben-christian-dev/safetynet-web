@@ -21,7 +21,7 @@ export default function Footer() {
                         <i className="fab fa-github" />
                     </li>
                 </ul>
-                <div className='text-center'>
+                <div className='text-center text-white'>
                     <p>© 2021 Safetynet. All rights reserved</p>
                 </div>
             </div>
