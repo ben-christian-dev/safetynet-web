@@ -6,6 +6,7 @@ $light-outer-shadow: 1px 2px 4px lightgrey;
 $dark-outer-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $form-input-bg: #eeeef3;
 $hover-border: 0 0 0 2px $splash;
+$inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 
 @mixin line {
     background-color: $primary;
@@ -14,6 +15,29 @@ $hover-border: 0 0 0 2px $splash;
     position: relative;
     vertical-align: middle;
     width: 50%;
+}
+
+.inner-shadow{
+    box-shadow: $inner-shadow;
+}
+
+.dark-outer-shadow{
+    box-shadow: $dark-outer-shadow;
+}
+
+.light-outer-shadow{
+    box-shadow: $dark-outer-shadow;
+}
+
+.img-box{
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.img-box img {
+    width: 100%;
+    border: 10px solid transparent;
+    border-radius: 5px;
 }
 
 .font-large{
@@ -83,9 +107,8 @@ input[name=signUp] {
 .buffer{
     margin-top: 15rem;
 }
-.text-p {
-    float: right;
-    color: black;
+
+.large-p{
     font-size: 1.6rem;
 }
 
@@ -141,41 +164,13 @@ hr {
     transform-origin: 50% 50%;
 }
 
-.about-us {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
 
 .our-story {
     overflow: hidden;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
   
-.our-story:before,
-.our-story:after {
-    display: inline-block;
-    @include line()
-}
   
-.our-story:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-  
-.our-story:after {
-    left: 0.5em;
-    margin-right: -50%;
-}
 
-.frame5 {
-    width: 50%;
-}
 
 .questions {
     margin-top: 5rem;
@@ -237,33 +232,9 @@ textarea[name=question]{
     background: transparent;
 }
 
-//
-//-> Animations
-//
 
-@keyframes move {
-    0%   { transform: scale(1)   translate(5px, -10px); }
-    38%  { transform: scale(0.8, 1) translate(20vw, 10vh) rotate(160deg); }
-    40%  { transform: scale(0.8, 1) translate(20vw, 10vh) rotate(160deg); }
-    78%  { transform: scale(1.3) translate(0vw, 20vh) rotate(-20deg); }
-    80%  { transform: scale(1.3) translate(0vw, 20vh) rotate(-20deg); }
-    100% { transform: scale(1)   translate(5px, -10px); }
-}
-
-@keyframes move2 {
-    0%   { transform: scale(1)   translate(-5px, 20px); }
-    38%  { transform: scale(0.8, 1) translate(-20vw, 10vh) rotate(160deg); }
-    40%  { transform: scale(0.8, 1) translate(-20vw, 10vh) rotate(160deg); }
-    78%  { transform: scale(1.3) translate(0vw, -20vh) rotate(-20deg); }
-    80%  { transform: scale(1.3) translate(0vw, -20vh) rotate(-20deg); }
-    100% { transform: scale(1)   translate(-5px, 20px); }
-}
-
-@keyframes move3 {
-    0%   { transform: scale(1)   translate(-5px, 20px); }
-    38%  { transform: scale(0.8, 1) translate(-20vw, 10vh) rotate(160deg); }
-    40%  { transform: scale(0.8, 1) translate(-20vw, 10vh) rotate(160deg); }
-    78%  { transform: scale(1.3) translate(0vw, -20vh) rotate(-20deg); }
-    80%  { transform: scale(1.3) translate(0vw, -20vh) rotate(-20deg); }
-    100% { transform: scale(1)   translate(-5px, 20px); }
+@media screen and (max-width: 991px){
+    input[name=signUp] {
+        margin-top: 1rem;
+    }
 }

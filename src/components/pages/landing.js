@@ -124,18 +124,29 @@ export default function Landing() {
             <div className='buffer'></div>
             <Row>
                 <div className='about-us'>
-                    <h1 className='font-weight-bold'>ABOUT US</h1>
-                    <h4 className='our-story font-weight-bold text-muted'>OUR STORY</h4>
-                    <p className='text-p'>
-                        Safetynet is free and simple to use. Just download the app, and use when you feel that you need help.
-                        If you like it - spread the word, so that people worldwide can feel safe and empowered while walking alone,
-                        taking transport alone, or even being in a public space. A simple push of a button on the app triggers an alert
-                        notice to everyone who is in a 200m radius of you. It shows your the location you are currently at so anyone within the
-                        space can come help you as soon as possible. Safetynet was inspired by the continued rates of sexual assault in the
-                        world, with many incidents taking place on transport or when walking home alone. The app is not a 911 alternative,
-                        and is used to inspire the community around you to make sure you feel safe if you are in danger.
+
+                    <Row className='justify-content-between'>
+                        <Col lg={7}>
+                            <h1 className='font-weight-bold'>ABOUT US</h1>
+                            <h4 className='our-story font-weight-bold text-muted'>OUR STORY</h4>
+                            <hr className='w-100 mt-2 mb-4' />
+                            <p className='large-p'>
+                                Safetynet is free and simple to use. Just download the app, and use when you feel that you need help.
+                                If you like it - spread the word, so that people worldwide can feel safe and empowered while walking alone,
+                                taking transport alone, or even being in a public space. A simple push of a button on the app triggers an alert
+                                notice to everyone who is in a 200m radius of you. It shows your the location you are currently at so anyone within the
+                                space can come help you as soon as possible. Safetynet was inspired by the continued rates of sexual assault in the
+                                world, with many incidents taking place on transport or when walking home alone. The app is not a 911 alternative,
+                                and is used to inspire the community around you to make sure you feel safe if you are in danger.
                     </p>
-                    <img className="frame5" src={frame5} alt="Frame5" />
+                        </Col>
+                        <Col lg={4} className='mt-auto mb-auto'>
+                            <div className='img-box inner-shadow'>
+                                <img className="w-100 dark-outer-shadow" src={frame5} alt="Frame5" />
+                            </div>
+
+                        </Col>
+                    </Row>
                 </div>
             </Row>
             <div className={'buffer text-center'}>
