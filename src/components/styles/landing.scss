@@ -142,34 +142,10 @@ hr {
     transform-origin: 50% 50%;
 }
 
-.frame4-move2 {
-    position: absolute;
-    bottom: 10;
-    left: 0;
-    fill: $primary;
-    width: 5vmax;
-    z-index: -1;
-    animation: move2 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-}
-
-.frame4-move3 {
-    position: absolute;
-    top: 100;
-    right: 0;
-    fill: $primary;
-    width: 5vmax;
-    z-index: -1;
-    animation: move2 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-}
-
 
 .our-story {
     overflow: hidden;
   }
-  
-  
 
 
 .questions {
@@ -179,7 +155,7 @@ hr {
     width: 100%;
 }
 
-.frame6 {
+.contact-img {
     width: 70%;
     display: block;
     margin-left: auto;
@@ -192,7 +168,7 @@ hr {
     width: 100%;
     padding: 1rem 2rem;
     margin-top: 10px;
-    display: inblock;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     border: none;

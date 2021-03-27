@@ -1,7 +1,7 @@
 import React from 'react'
 import landingimg from '../../assets/landing-img.svg'
-import frame5 from '../../assets/frame5.svg'
-import frame6 from '../../assets/frame6.svg'
+import about from '../../assets/about.svg'
+import contact from '../../assets/contact.svg'
 import app from '../../assets/app.svg'
 import location from '../../assets/location.svg'
 import alert from '../../assets/alert.svg'
@@ -97,7 +97,7 @@ export default function Landing() {
                     <Col lg={3} className='mb-3'>
                         <div className={'how-it-works-card'}>
                             <img src={app} alt='app' width='100%' className={'how-it-works-img'} />
-                            <p className={'text-muted text-left mt-3'}>Open the Safetynet app if you think you are in danger.</p>
+                            <p className={'text-muted text-left mt-3'}><span className='text-dark font-weight-bold'>Step 1: </span>Open the Safetynet app if you think you are in danger.</p>
                         </div>
                     </Col>
                     <Col lg={3} className='mb-3'>
@@ -105,6 +105,7 @@ export default function Landing() {
                             <img src={alert} width='100%' alt='app' />
                             <hr className='mb-4 mt-4' />
                             <p className={'text-muted text-left mt-3'}>
+                                <span className='text-dark font-weight-bold'>Step 2: </span>
                                 Once the app is open, you will see a large white button. Press this button once and you will feel a vibration. All devices within a 200m radius of you with the Safetynet app
                                 will be sent an alert.
                             </p>
@@ -115,6 +116,7 @@ export default function Landing() {
                             <img src={location} width='100%' alt='app' />
                             <hr className='mb-4 mt-4' />
                             <p className={'text-muted text-left mt-3'}>
+                                <span className='text-dark font-weight-bold'>Step 3: </span>
                                 The alert will show the address you are clostest to, your distance away from the person who is alerted and the neighbourhood you are in so the community can help you.
                                 </p>
                         </div>
@@ -142,7 +144,7 @@ export default function Landing() {
                         </Col>
                         <Col lg={4} className='mt-auto mb-auto'>
                             <div className='img-box inner-shadow'>
-                                <img className="w-100 dark-outer-shadow" src={frame5} alt="Frame5" />
+                                <img className="w-100 dark-outer-shadow" src={about} alt="Frame5" />
                             </div>
 
                         </Col>
@@ -202,7 +204,7 @@ export default function Landing() {
                     </form>
                 </Col>
                 <Col lg={6}>
-                    <img className="frame6" src={frame6} alt="Frame6" />
+                    <img className='contact-img' src={contact} alt="contact" />
                 </Col>
             </Row>
         </Container>

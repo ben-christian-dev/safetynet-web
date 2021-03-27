@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import frame7 from '../assets/frame7.svg'
+import lightlogo from '../assets/light-logo.svg'
 import './styles/footer.scss'
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
             <div>
                 <ul className='footer-content'>
                     <li>
-                        <img className="frame7" src={frame7} alt="Frame7" />
+                        <img className="light-logo" src={lightlogo} alt="logo" />
                     </li>
                     <li>
                         <p className='footer-dash'>-</p>
