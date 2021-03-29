@@ -5,9 +5,9 @@ export default async function emailService(name, email, question){
     if (name === '' || name === null || email === "" || email === null || question === "" || question === null) {
         return
     }
-    console.log('ok')
     await axios({
-        url: 'https://safetynet-server.herokuapp.com/contact',
+        //url: 'https://safetynet-server.herokuapp.com/contact',
+        url: 'http://localhost:8080/contact',
         method: 'post',
         data: {
             'name': name,
