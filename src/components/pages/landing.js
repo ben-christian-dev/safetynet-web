@@ -137,7 +137,7 @@ export default function Landing() {
                 <Container fluid className={'mt-3'}>
                     <Row className='justify-content-center'>
                         <Col lg={3}>
-                            <img width='100%' src={googleplaybadge} alt='android' />
+                            <a href="https://play.google.com/store/apps/details?id=com.safetynet.client"><img width='100%' src={googleplaybadge} alt='android' /> </a>
                         </Col>
                         <Col lg={3}>
                             <img width='80%' height='100%' src={appstorebadge} alt='ios' />
