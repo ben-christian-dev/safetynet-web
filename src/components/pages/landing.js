@@ -1,4 +1,5 @@
 import React from 'react'
+
 import landingimg from '../../assets/landing-img.svg'
 import about from '../../assets/about.svg'
 import contact from '../../assets/contact.svg'
@@ -11,6 +12,8 @@ import appstorebadge from '../../assets/appstore-badge.svg'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 import '../styles/landing.scss'
 import signUpService from '../../services/sign_up.js'
@@ -22,40 +25,54 @@ export default function Landing() {
     const [name, setName] = React.useState('')
     const [email, setEmail] = React.useState('')
     const [question, setQuestion] = React.useState('')
+    const [open, setOpen] = React.useState(false);
 
     const SignUp = async () => {
-        console.log("ok")
         await signUpService(signUp)
+        setOpen(o => !o);
     }
 
     const Contact = async () => {
-        await emailService(name, email, question)
+        await emailService(name, email, question);
+        setOpen(o => !o);
     }
+
+    const ControlledPopup = () => {
+
+        return (
+            <div>
+                <Popup open={open} closeOnDocumentClick>
+
+                
+                    <p className="text-center">Success!</p>
+
+                </Popup>
+            </div>
+        );
+    };
 
     return (
         <Container fluid>
-
+            <ControlledPopup />
             <Row className="justify-content-between" id={'landing'}>
                 <Col lg={5} className='mb-5'>
                     <div className='top-text'>
                         <h1 className='font-large font-weight-bolder'>Help make the world a safer place with Safetynet</h1>
-                        <form className='mt-4'>
-                            <Row className='justify-content-between'>
-                                <Col lg={8}>
-                                    <input
-                                        name="signUp"
-                                        type="email"
-                                        placeholder="Email Address"
-                                        value={signUp}
-                                        onChange={e => setSignUp(e.target.value)}
-                                        required
-                                    />
-                                </Col>
-                                <Col lg={4}>
-                                    <button className='sign-up' onClick={SignUp}>Sign up!</button>
-                                </Col>
-                            </Row>
-                        </form>
+                        <Row className='justify-content-between mt-4'>
+                            <Col lg={8}>
+                                <input
+                                    name="signUp"
+                                    type="email"
+                                    placeholder="Email Address"
+                                    value={signUp}
+                                    onChange={e => setSignUp(e.target.value)}
+                                    required
+                                />
+                            </Col>
+                            <Col lg={4}>
+                                <button className='sign-up' onClick={SignUp}>Sign up!</button>
+                            </Col>
+                        </Row>
                     </div>
                     <div>
                         <h5 className='text-highlight mt-2'>Signup for our newsletter</h5>
@@ -156,31 +173,30 @@ export default function Landing() {
                     <hr />
                 </div>
                 <Col lg={4}>
-                    <form>
-                        <input
-                            name="name"
-                            placeholder="NAME"
-                            value={name}
-                            onChange={e => setName(e.target.value)}
-                            required
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="EMAIL"
-                            value={email}
-                            onChange={e => setEmail(e.target.value)}
-                            required
-                        />
-                        <textarea
-                            name="question"
-                            placeholder="QUESTIONS"
-                            value={question}
-                            onChange={e => setQuestion(e.target.value)}
-                            required
-                        />
-                        <button className='send-message mt-3' onClick={Contact}>SEND MESSAGE</button>
-                    </form>
+                    <input
+                        name="name"
+                        placeholder="NAME"
+                        value={name}
+                        onChange={e => setName(e.target.value)}
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="EMAIL"
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
+                        required
+                    />
+                    <textarea
+                        name="question"
+                        placeholder="QUESTIONS"
+                        value={question}
+                        onChange={e => setQuestion(e.target.value)}
+                        required
+                    />
+                    <button className='send-message mt-3' onClick={Contact}>SEND MESSAGE</button>
+
                 </Col>
                 <Col lg={6}>
                     <img className='contact-img' src={contact} alt="contact" />
