@@ -28,11 +28,15 @@ export default function Landing() {
     const [open, setOpen] = React.useState(false);
 
     const SignUp = async () => {
+        if (!signUp.length)
+            return;
         await signUpService(signUp)
         setOpen(o => !o);
     }
 
     const Contact = async () => {
+        if (!name.length || !email.length || !question.length)
+            return;
         await emailService(name, email, question);
         setOpen(o => !o);
     }
@@ -42,10 +46,7 @@ export default function Landing() {
         return (
             <div>
                 <Popup open={open} closeOnDocumentClick>
-
-                
                     <p className="text-center">Success!</p>
-
                 </Popup>
             </div>
         );
